@@ -1,16 +1,16 @@
-#include <iostream>
-
-using namespace std;
+#include <stdlib.h>
+#include <stdio.h>
 
 int main ()
 {
-  string objectName;
-  double x, y, r;
-  printf ("Enter the name of the object: ")
-    scanf ("%s", &objectName);
-  if (objectName == 'triangle')
+  string objectName[] = "triangle";
+  char rightObjName[] = "triangle";
+   float x, y, r;
+  printf ("Enter the name of the object: ");
+  if (objectName == rightObjName)
     {
-      scanf ("%fl %fl %fl", &x, &y, &r);
+      scanf ("%f %f %f", &x, &y, &r);
+      printf ("okay");
     }
   return 0;
 }
